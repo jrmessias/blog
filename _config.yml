@@ -4,10 +4,13 @@ description: "Archive for my memory"
 meta_description: "Arquivo with links, tutorials, personal contents."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl:
+baseurl: 'https://blog.jrmessias.com.br'
+url: 'https://blog.jrmessias.com.br'
 google_analytics: 'UA-46278016-1'
 disqus: 'jrmessias'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+
+
 
 # Authors
 authors:
@@ -32,6 +35,7 @@ authors:
 plugins: 
   - jekyll-paginate
   - jekyll-archives
+  - jekyll-sitemap
     
 # Archives
 jekyll-archives:

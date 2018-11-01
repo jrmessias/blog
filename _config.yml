@@ -1,0 +1,50 @@
+# Site
+name: "jrmessias"
+description: "Archive for my memory"
+meta_description: "Arquivo with links, tutorials, personal contents."
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl:
+google_analytics: 'UA-46278016-1'
+disqus: 'jrmessias'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+
+# Authors
+authors:
+  jrmessias:
+    name: Júnior Messias
+    display_name: jrmessias
+    gravatar: 9287850feb896e1fc865a2f8ea905255
+    email: jrmessias@gmail.com
+    web: https://www.jrmessias.com.br
+    twitter: https://twitter.com/jrmessias
+    description: "Just a guy making something(s)"
+  fabi:
+    name: Fabiana Toniolli Messias
+    display_name: fabict
+    gravatar: b1cc14991db7a456fcd761680bbc8f81
+    email: wowthemesnet@gmail.com
+    web: https://www.wowthemes.net
+    twitter: https://twitter.com/wowthemesnet
+    description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+
+# Plugins
+plugins: 
+  - jekyll-paginate
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+highlighter: rouge

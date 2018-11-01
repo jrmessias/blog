@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="icon" href="{{ site.baseurl }}/assets/images/logo.png">
+
+    <title>{{ page.title }} | {{site.name}}</title>
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+          integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Viga%7CMerriweather:300,300i,400,400i,700,700i"
+          rel="stylesheet">
+
+    <link href="{{ site.baseurl }}/assets/css/screen.css" rel="stylesheet">
+
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
+
+</head>
+
+{% if jekyll.environment == 'production' %}
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', '{{site.google_analytics}}', 'auto');
+    ga('send', 'pageview');
+</script>
+{% endif %}
+
+{% capture layout %}{% if page.layout %}layout-{{ page.layout }}{% endif %}{% endcapture %}
+<body class="{{ layout }} dark-mode">
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+        <!-- Begin Logo -->
+        <a class="navbar-brand " href="{{ site.baseurl }}/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 637.91 637.91" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd">
+                <path class="logo" d="M495.95 34.33h.01V405.2c0 36.54-7.49 63.04-22.47 79.51-14.97 16.47-35.63 24.7-62 24.7-22.16 0-42.37-5.54-60.64-16.62-18.27-11.07-36.39-26.51-54.35-46.26l-87.16 97.04c7.54 8.99 15.78 17.56 24.74 25.67l.78.71.04.04.75.67.33.29.46.41.62.55.18.15.8.7.11.1.69.59.4.35.4.34.7.6.11.09.81.69.18.15.63.53.48.4.34.28.78.65.04.03.83.68.26.21.58.47.56.46.27.22.84.68.03.02.81.65.33.27.51.4.64.5.21.16.85.66.11.08.75.58.42.32.44.34.73.56.13.1.87.66.18.13.69.52.49.37.38.28.81.6.06.05.88.64.26.19.63.45.58.42.31.22.89.64.01.01.88.63.34.24.56.4.67.47.23.17.91.63.09.06.82.57.42.29.49.33.76.52.16.11.92.63.17.11.75.5.51.34.42.27.85.56.08.06.93.61.26.17.68.44.6.39.34.22.94.61.95.6.34.22.61.39.69.43.26.16.96.6.08.05.88.54.43.27.54.33.79.48c3.63 2.2 7.34 4.36 11.12 6.48 33.24 18.57 74.43 27.86 123.54 27.86H-.07V-.07h495.95v34.33zm141.96 377.16V637.9H415.1c34.13 0 65.13-4.94 92.99-14.82 14.69-5.22 28.17-11.72 40.44-19.51h-.01l1.03-.66.34-.22.17-.11.51-.33.51-.33.51-.33 2.02-1.36.5-.34.06-.04.43-.3 1-.7.49-.35.17-.12.32-.23.49-.35.23-.16.26-.19.49-.36.29-.21.2-.15.83-.61.14-.11.49-.36.96-.73.45-.34.03-.03.48-.37.48-.37.02-.01.45-.36.94-.75.47-.38.47-.38.47-.37.18-.15.28-.23.47-.38.23-.19.23-.19.46-.38.29-.24.17-.15 2.28-1.95.43-.37.02-.02.45-.4.45-.4.04-.03.41-.37.45-.4.09-.07.36-.33.44-.4.14-.12.31-.28.44-.41.19-.17.25-.24.88-.82.43-.41.28-.27.15-.15.43-.42.86-.84.38-.37.05-.06.42-.42.43-.42.44-.44.44-.44.02-.01.42-.43.44-.45.03-.03.4-.42.44-.45.05-.05.38-.4.86-.91.42-.45.08-.08.34-.38.42-.46.1-.1.32-.36.42-.46.12-.12.31-.34.42-.47.13-.14.28-.33.41-.47.82-.94.16-.18.25-.29.41-.47 1.61-1.9.2-.24.2-.24.4-.48 1.18-1.46.39-.48c1.69-2.11 3.34-4.27 4.94-6.47l.37-.51.33-.45.04-.06c1.95-2.73 3.85-5.5 5.66-8.35l.07-.1.27-.43v.01c7.52-11.86 13.88-24.81 19.06-38.85 10.18-27.54 15.27-60.19 15.27-97.92z" id="logo"/>
+            </svg>
+            <!--<img src="{{ site.baseurl }}/{{ site.logo }}" alt="{{ site.name }}">-->
+        </a>
+        <!-- End Logo -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarMediumish">
+
+            <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                {% if page.url == "/" %}
+                <li class="nav-item active">
+                    {% else %}
+                <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/index.html"><i class="fas fa-home"></i> </a>
+                </li>
+
+                {% if page.url == "/about.html" %}
+                <li class="nav-item active">
+                    {% else %}
+                <li class="nav-item">
+                    {% endif %}
+                    <a class="nav-link" href="{{ site.baseurl }}/about">Sobre</a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://www.facebook.com/jrmessias/"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://twitter.com/jrmessias"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+
+                <li class="nav-item">
+                    <a target="_blank" class="nav-link" href="https://github.com/jrmessias"><i
+                            class="fab fa-github"></i></a>
+                </li>
+
+            </ul>
+
+            <!-- End Menu -->
+
+        </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+    <div class="container">
+
+        <!-- Site Title
+        ================================================== -->
+        <div class="mainheading">
+            <h1 class="sitetitle">{{ site.name }}</h1>
+            <p class="lead">
+                {{ site.description }}
+            </p>
+        </div>
+
+
+        <!-- Content
+        ================================================== -->
+        <div class="main-content">
+            {{ content }}
+        </div>
+
+        <!-- Bottom Alert Bar
+        ================================================== -->
+        {% if site.mailchimp-list %}
+        <div class="alertbar">
+            <div class="container text-center">
+                <span><img src="{{ site.baseurl }}/{{ site.logo }}"
+                           alt="{{site.title}}"> &nbsp; Never miss a <b>story</b> from us, subscribe to our newsletter</span>
+                <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
+                      class="wj-contact-form validate" target="_blank" novalidate>
+                    <div class="mc-field-group">
+                        <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
+                               autocomplete="on" required>
+                        <input type="submit" value="Subscribe" name="subscribe" class="heart">
+                    </div>
+                </form>
+            </div>
+        </div>
+        {% endif %}
+
+    </div><!-- /.container>
+    
+<!-- Categories Jumbotron
+================================================== -->
+    <div class="jumbotron fortags">
+        <div class="d-flex h-100">
+            <div class="col-md-4 align-self-center text-center h-100">
+                <div class="d-flex align-items-center justify-content-center h-100">
+                    <h2 class="d-md-block d-none align-self-center">Veja mais →</h2>
+                </div>
+            </div>
+            <div class="col-md-8 align-self-center text-center">
+                {% assign tags_list = site.categories %}
+                {% if tags_list.first[0] == null %}
+                {% for tag in tags_list %}
+                <a href="{{ site.baseurl }}/category/{{ tag }}">{{ tag | capitalize }} {{ site.tags[tag].size }}</a>
+                {% endfor %}
+                {% else %}
+                {% for tag in tags_list %}
+                <a href="{{ site.baseurl }}/category/{{ tag[0] }}">{{ tag[0] | capitalize }} ({{ tag[1].size }})</a>
+                {% endfor %}
+                {% endif %}
+                {% assign tags_list = nil %}
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Begin Footer
+    ================================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                    Copyright © {{ site.time | date: "%Y" }} {{ site.name }}
+                </div>
+                <div class="col-md-6 col-sm-6 text-center text-lg-right">
+                    <a target="_blank" href="https://www.wowthemes.net">Mediumish Theme</a> by WowThemes.net
+                    <br><a target="_blank" href="https://www.jrmessias.com.br">Dark mode </a> by jrmessias
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer
+    ================================================== -->
+
+
+</div> <!-- /.site-content>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+<script src="{{ site.baseurl }}/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="{{ site.baseurl }}/assets/js/mediumish.js"></script>
+
+<script id="dsq-count-scr" src="//{{site.disqus}}.disqus.com/count.js"></script>
+</body>
+</html>

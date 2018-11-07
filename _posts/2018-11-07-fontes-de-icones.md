@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fontes de ícones"
-date: 2016-03-25 12:00:00
+date: 2018-11-07 12:00:00
 author: jrmessias
 categories: [ frontend ]
 tags:       [font, front-end, icons, font icons, web]
@@ -78,4 +78,4 @@ hidden: false
 
 <p>Dependendo do ícone que irá criar será necessário utilizar um editor gráfico, como CorelDRAW ou Illustrator. Se utilizar ícones baixados de outros sites, verifique a licença de cada.</p>
 
-<p><strong>Valeu!</strong></p>
+<p><strong>Valeu! :thumbsup:</strong></p>

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "Instalando Jekyll no Windows"
-date: 2016-07-27 12:00:00
+date: 2018-11-05 12:00:00
 author: jrmessias
 categories: [ jekyll, tutorial ]
 tags: [jekyll, ruby, gems, bundler, windows, site]
 image: assets/images/03keyboard.jpg
 image_credit: Photo by freestocks.org on Unsplash
-last: true
+last: false
 hidden: false
 ---
 
@@ -69,3 +69,5 @@ Até aqui, seu site Jekyll funcionando. :smile:
 - [Jekyll Themes](http://themes.jekyllrc.org/)
 - [Jekyll Tips](http://jekyll.tips/templates/)
 - [GitHub](https://github.com/jekyll/jekyll/wiki/themes)
+
+<p><strong>Valeu! :thumbsup:</strong></p>

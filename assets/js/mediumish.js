@@ -107,10 +107,29 @@ jQuery(document).ready(function($){
 
         lastScrollTop = st;
     }
-    
-    
+
     $('.site-content').css('margin-top', $('header').outerHeight() + 'px');
+});
 
+const nightModeStorage = localStorage.getItem('darkMode');
+const nightMode = document.querySelector('#switch-dark-mode');
+const metaThemeColor = document.querySelector("meta[name=theme-color]");
 
+// caso tenha o valor no localStorage
+if (nightModeStorage) {
+    document.documentElement.classList.add('dark-mode');
+    metaThemeColor.setAttribute("content", 'dark-mode');
+    nightMode.checked = true;
+}
 
+// ao clicar mudaremos as cores
+nightMode.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark-mode');
+    if ( document.documentElement.classList.contains('dark-mode') ) {
+        localStorage.setItem('darkMode', true);
+        metaThemeColor.setAttribute("content", 'dar-mode');
+        return;
+    }
+    localStorage.removeItem('darkMode');
+    metaThemeColor.setAttribute("content", 'whiteMode');
 });

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Frameworks para projetos web"
-date: 2016-03-25 12:00:00
+date: 2018-11-07 12:00:00
 author: jrmessias
 categories: [ frontend ]
 tags:       [web, front-end, css, bootstrap, iniciante]
@@ -95,4 +95,4 @@ hidden: false
 
 <p><strong>Artigo original: </strong><a href="http://sixrevisions.com/css/small-css-frameworks" target="_blank">12 Small CSS Frameworks To Use In Your Web Designs</a></p>
 
-<p><strong>Valeu!</strong></p>
+<p><strong>Valeu! :thumbsup:</strong></p>

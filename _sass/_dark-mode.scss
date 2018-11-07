@@ -1,0 +1,132 @@
+
+body.dark-mode {
+  $dark-mode-bg1: #000000;
+  $dark-mode-bg2: #212121;
+  $dark-mode-bg3: #303030;
+  $dark-mode-bg4: #424242;
+  $dark-mode-fg1: #ffffff;
+  $dark-mode-fg2: #ffffffB3;
+  $dark-mode-fg3: #ffffff80;
+  $dark-mode-primary: #5fba7d;
+  $dark-mode-secondary: #ff3f80;
+
+  a {
+    color: $dark-mode-fg2;
+    &:hover {
+      color: $dark-mode-primary;
+    }
+  }
+
+  background: $dark-mode-bg1;
+  color: $dark-mode-fg2;
+
+  .navbar {
+    &.bg-white {
+      background: $dark-mode-bg1 !important;
+    }
+    svg {
+      fill: $dark-mode-primary;
+    }
+  }
+  .navbar .navbar-nav .active > .nav-link {
+    color: $dark-mode-fg1 !important;
+  }
+  .navbar .navbar-nav a.nav-link {
+    color: $dark-mode-fg2 !important;
+    &:hover {
+      color: $dark-mode-primary !important;
+    }
+  }
+
+  .mainheading {
+    h1.sitetitle {
+      font-family: Viga;
+      color: $dark-mode-primary;
+    }
+  }
+
+  .featured-image {
+    margin-bottom: 0;
+  }
+  figcaption{
+    font-style: italic;
+    margin-bottom: 1.5rem;
+  }
+
+  .featured-posts,
+  .recent-posts {
+    .listfeaturedtag {
+      background: $dark-mode-bg2;
+    }
+    .section-title {
+      i {
+        color: $dark-mode-fg3;
+      }
+      h2 {
+        border-bottom: 1px solid $dark-mode-bg2;
+      }
+      span {
+        border-bottom: 1px solid $dark-mode-fg1;
+      }
+    }
+  }
+  .card {
+    background: $dark-mode-bg2;
+    color: $dark-mode-fg1;
+    .card-title {
+      a.text-dark {
+        color: $dark-mode-fg2 !important;
+        &:hover {
+          color: $dark-mode-primary !important;
+        }
+      }
+    }
+    .card-text {
+      color: $dark-mode-fg3;
+    }
+    .card-footer.bg-white {
+      color: $dark-mode-fg3 !important;
+      background: $dark-mode-bg2 !important;
+      a, .post-date {
+        color: $dark-mode-fg3 !important;
+      }
+    }
+    .post-date {
+      color: $dark-mode-fg1 !important;
+    }
+  }
+
+  .bottompagination{
+    .pointerup{
+      i.fa{
+        color: $dark-mode-fg3;
+      }
+
+    }
+    span.navigation{
+      border-top: 1px solid $dark-mode-fg3;
+    }
+  }
+  .share {
+    color: $dark-mode-fg2;
+  }
+  .post-top-meta {
+    .author-description {
+      color: $dark-mode-fg3;
+    }
+    .read-time{
+      color: $dark-mode-fg3;
+    }
+  }
+  .article-post {
+    color: $dark-mode-fg2;
+    blockquote {
+      color: $dark-mode-fg3;
+    }
+  }
+
+  footer {
+    background: $dark-mode-bg1;
+    color: $dark-mode-fg1;
+  }
+}

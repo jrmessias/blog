@@ -4,7 +4,7 @@ description: "Archive for my memory"
 meta_description: "Arquivo with links, tutorials, personal contents."
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
-baseurl: 'https://blog.jrmessias.com.br'
+#baseurl: 'https://blog.jrmessias.com.br'
 url: 'https://blog.jrmessias.com.br'
 google_analytics: 'UA-46278016-1'
 disqus: 'jrmessias'

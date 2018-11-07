@@ -17,7 +17,9 @@ hidden: false
 
 <p>Poisé, dá uma olhada nesse vídeo, veja se você se identifica com isso.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tMuU6fViaS8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/tMuU6fViaS8" allowfullscreen></iframe>
+</div>
 
 <p>Então, agora se conhecendo, bóra colocar em prática os projetos?</b>
 

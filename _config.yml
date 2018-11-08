@@ -10,8 +10,6 @@ google_analytics: 'UA-46278016-1'
 disqus: 'jrmessias'
 #mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
-
-
 # Authors
 authors:
   jrmessias:
@@ -21,6 +19,7 @@ authors:
     email: jrmessias@gmail.com
     web: https://www.jrmessias.com.br
     twitter: https://twitter.com/jrmessias
+    linkedin: https://www.linkedin.com/in/jrmessias/?locale=pt_BR
     description: "Just a guy making something(s)"
   fabi:
     name: Fabiana Toniolli Messias
@@ -30,6 +29,12 @@ authors:
     web: https://www.wowthemes.net
     twitter: https://twitter.com/wowthemesnet
     description: "This is the author box. Write a short description of the author here. You are currently previewing Mediumish demo, a Jekyll template compatible with Github pages."
+
+# Social Media
+facebook: https://www.facebook.com/jrmessias
+twitter: https://twitter.com/jrmessia
+linkedin: https://www.linkedin.com/in/jrmessias/?locale=pt_BR
+github: https://github.com/jrmessias
 
 # Plugins
 plugins: 

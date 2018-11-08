@@ -1,0 +1,8 @@
+<!-- SEO - BlogPosting -->
+<article itemscope itemtype="http://schema.org/BlogPosting">
+    <meta itemprop="title" content="{{ page.title }} - {{ page.subtitle | strip_html }}" />
+    <meta itemprop="author" content="{{ author.display_name }}" />
+    <meta itemprop="url" content="{{ page.date | date: "%Y/%m/%d" }}/{{ page.title | prepend: site.baseurl | slugify }}" />
+    <meta itemprop="keywords" content="{{ page.tags | join: ', ' }}" />
+    <meta itemprop="image" content="{{ page.image | prepend: site.baseurl }}" />
+</article>

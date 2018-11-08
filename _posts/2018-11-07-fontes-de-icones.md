@@ -10,6 +10,7 @@ image_credit: Photo by Harpal Singh on Unsplash
 featured: true
 hidden: false
 ---
+<p>Complementando o Bootstrap, fontes de ícones para seu layout.</p>
 
 <p>Muitas vezes no desenvolvimento de sites utilizamos ícones para melhorar a utilização do site, indicar categorias, formas de pagamento, etc... e geralmente pensa-se em utilizar imagens em sprites, ainda trocando ícone ou cor com efeito :hover do mouse. Mas para funcionar bem teríamos que criar várias classes para adaptação em um site responsivo ou editar as os sprites quando houvesse mudança, como adição de forma de pagamento ou categoria.</p>
 

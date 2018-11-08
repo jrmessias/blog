@@ -30,19 +30,21 @@ a {
   }
 }
 
-
-figure{
+figure {
   .with-bg-size {
     height: 200px;
     background-position: center;
     /* Make the background image cover the area of the <div>, and clip the excess */
     background-size: cover;
+    border-radius: 5px 5px 0 0;
   }
 }
-figcaption{
+
+figcaption {
   font-style: italic;
   margin-bottom: 1.5rem;
   background-color: #f1f1f1;
+  border-radius: 0 0 5px 5px;
 }
 
 $dark-mode-bg1: #000000;

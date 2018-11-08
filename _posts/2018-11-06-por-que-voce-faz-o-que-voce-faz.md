@@ -10,6 +10,7 @@ image_credit: Photo by Alex Litvin on Unsplash
 last: true
 hidden: false
 ---
+<p><i>"Trabalhar duro por algo que você não se importa é chamado estresse. Trabalhar duro por algo que você ama é chamado paixão!"<i><p>
 
 <p>Bem, há um tempo vi esta palestra, passei para os alunos e agora compartilho. <b>Simon Sinek: Como grandes líderes inspiram ação</b>, tenho pensado muito sobre o assunto, então deixo como inspiração para quem passar por aqui.</p>
 

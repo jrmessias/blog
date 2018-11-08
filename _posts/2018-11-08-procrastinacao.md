@@ -11,6 +11,8 @@ last: true
 hidden: false
 ---
 
+<p>Quando você tem aquela tarefa bacana pra fazer...</p>
+
 <p>Sabe quando você ganha uma missão, aquele job ou tarefa super legal que estava esperando que repassasem a você?</p>
 
 <p>Afinal, você já tinha pensado em tudo, tava tudo em mente... mas não no papel.</p>
@@ -21,7 +23,7 @@ hidden: false
     <iframe  class="embed-responsive-item" src="https://www.youtube.com/embed/tMuU6fViaS8" allowfullscreen></iframe>
 </div>
 
-<p>Então, agora se conhecendo, bóra colocar em prática os projetos?</b>
+<p>Então, agora se conhecendo, bóra colocar em prática os projetos?</p>
 
 <p><strong>Valeu! :thumbsup:</strong></p>
 

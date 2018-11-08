@@ -10,6 +10,7 @@ image_credit: Photo by Harpal Singh on Unsplash
 featured: true
 hidden: false
 ---
+<p>Como desenvolver um site sem muito esfoço com auxílio para layouts, cores, elementos e funções para seu site.</p>
 
 <p>Quem ainda não ouviu falar sobre UI frameworks ou CSS frameworks, ou ainda os conhecidos 'Bootstraps'? Bootstrap é um framework front-end que facilita a vida dos desenvolvedores web a criar sites com tecnologia mobile (responsivo) sem ter que digitar uma linha de CSS para "fazer e acontecer" (Wikipédia)</p>
 

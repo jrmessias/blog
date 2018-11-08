@@ -39,8 +39,12 @@ html.dark-mode {
       }
     }
 
+    .with-bg-size{
+      border-radius: 5px 5px 0 0;
+    }
     figcaption{
       background: $dark-mode-bg3;
+      border-radius: 0 0 5px 5px;
     }
 
     .featured-posts,
@@ -74,9 +78,9 @@ html.dark-mode {
       .card-text {
         color: $dark-mode-fg3;
       }
-      .card-footer.bg-white {
-        color: $dark-mode-fg3 !important;
-        background: $dark-mode-bg2 !important;
+      .card-footer {
+        color: $dark-mode-fg3;
+        background: $dark-mode-bg2;
         a, .post-date {
           color: $dark-mode-fg3 !important;
         }
